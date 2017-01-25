@@ -1,0 +1,9 @@
+FROM golang:1.7-alpine
+
+RUN apk add --update make
+
+VOLUME /app/src
+WORKDIR /app/src
+
+CMD /usr/bin/make
+

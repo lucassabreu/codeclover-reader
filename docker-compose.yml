@@ -1,0 +1,9 @@
+version: '2.0'
+services:
+    go:
+        build:
+            context: .
+            dockerfile: Dockerfile-go
+        image: lucassabreu/go-make:1.7
+        volumes:
+            - .:/app/src
