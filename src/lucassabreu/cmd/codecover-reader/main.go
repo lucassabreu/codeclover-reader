@@ -4,6 +4,7 @@ import (
     "fmt"
     "os"
     "flag"
+    "lucassabreu/pkg/parser"
 )
 
 func getHelp() {
@@ -16,5 +17,7 @@ func main() {
     flag.Parse()
 
     fmt.Println("CodeCover: " + *fileName)
+
+    parser.GetObjectFromXML(fileName)
 }
 
